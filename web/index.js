@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Mettez le fichier audio sélectionné dans la balise source
                 source.src = audioURL;
 
+                fileName.textContent =  selectedFile.name;
+
                 // Mettez à jour le lecteur audio
                 audio.load();
             } else {
@@ -43,4 +45,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 let audio = document.getElementById("audioPlayer");
 let source = document.getElementById("audioSource");
+let fileName = document.getElementById("fileName");
 
