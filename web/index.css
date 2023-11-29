@@ -1,1 +1,109 @@
- 
+ body {
+     font-family: 'Outfit', sans-serif;
+     padding: 20px 50px;
+ }
+
+ /* HEADER */
+
+ header {
+
+     margin: auto;
+
+ }
+
+ header h1 span {
+
+     color: #FF005E;
+     font-size: 15px;
+     opacity: 0.7;
+
+ }
+
+ header h1 {
+
+     display: flex;
+     align-items: first baseline baseline;
+     gap: 5px;
+
+ }
+
+ header p {
+
+     border: 1.5px solid #f6dce0;
+     background-color: #f5f5f5;
+     font-weight: 400;
+     color: #666;
+     width: max-content;
+     padding: 5px;
+     border-radius: 7px;
+     display: flex;
+     align-items: center;
+     gap: 5px;
+ }
+
+ /* INTRO */
+
+ #intro {
+
+     border: 1.5px solid #f6dce0;
+     background-color: #f5f5f5;
+     color: #666;
+     width: max-content;
+     border-radius: 7px;
+     display: flex;
+     align-items: center;
+     padding-top: 5px;
+     padding-left: 5px;
+     padding-right: 5px;
+     gap: 10px;
+
+ }
+
+ #main {
+
+     margin-top: 50px;
+
+ }
+
+ #import-file {
+
+     display: flex;
+     flex-direction: column;
+     border: 1.5px solid #f6dce0;
+     background-color: #f5f5f5;
+     color: #666;
+     width: max-content;
+     border-radius: 7px;
+     padding: 15px;
+     gap: 15px;
+
+ }
+
+ #import-file label {
+
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     gap: 5px;
+
+ }
+
+ #import-file label span {
+
+     color: #FF005E;
+     font-size: 12px;
+     opacity: 0.9;
+     text-decoration: underline;
+
+ }
+
+ #import-file input {
+
+     border: 1.5px dashed #f6dce0;
+     background-color: #f5f5f5;
+     color: #666;
+     border-radius: 7px;
+     font-size: 13px;
+     margin: auto;
+     padding: 15px;
+ }
