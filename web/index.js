@@ -15,6 +15,13 @@ document.addEventListener('DOMContentLoaded', function () {
             // Accédez au fichier sélectionné
             let selectedFile = input.files[0];
 
+            input.disabled = true;
+
+            // Fonction appelée avant le rechargement de la page
+            window.onbeforeunload = function () {
+                return "You are about to leave this and delete unsaved changes, are you sure ?";
+            };
+
             // AUDIO PLAYER 
             let audio = document.getElementById("audioPlayer");
 
@@ -29,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Mettez le fichier audio sélectionné dans la balise source
                 source.src = audioURL;
 
-                fileName.textContent =  selectedFile.name;
+                fileName.textContent = selectedFile.name;
 
                 // Mettez à jour le lecteur audio
                 audio.load();
