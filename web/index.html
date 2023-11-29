@@ -48,12 +48,63 @@
                         <path fill="#000"
                             d="M21.422 13a.675.675 0 0 0-.427.174l-5.7 4.74a.869.869 0 0 1-.716.246h-3.673a.9.9 0 0 0-.906.894s0 .008 0 .012v5.87a.9.9 0 0 0 .9.9h3.68a.869.869 0 0 1 .716.246l5.7 4.74c.391.325.811.168.811-.217V13.391a.371.371 0 0 0-.354-.391Zm7.328 1.725l-1.343 1.345a11.031 11.031 0 0 1 0 11.883l1.339 1.332a12.893 12.893 0 0 0 .004-14.561Zm-3.25 3.241L24.179 19.3a4.526 4.526 0 0 1 0 5.428l1.321 1.316a6.416 6.416 0 0 0 .008-8.077Z" />
                     </svg><strong>Choose an audio file</strong> <span>(.mp3 • .wav • .flac)</span></label>
+                <div id="input-file-container">
+                    <input type="file" name="audio-imported" accept=".wav, .flac, .mp3" />
+                </div>
 
-                <input type="file" name="audio-imported" accept=".wav, .flac, .mp3" />
             </div>
-            <div id="play-file"></div>
-        </div>
-        <div id="main-right"></div>
+            <div id="play-file">
+                <p><svg width="20" height="20" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#FF005E" opacity=".5"
+                            d="M17.229 4a.9.9 0 0 0-.569.232l-7.6 6.32a1.158 1.158 0 0 1-.955.328H3.208A1.2 1.2 0 0 0 2 12.088v7.826a1.2 1.2 0 0 0 1.208 1.206H8.1a1.158 1.158 0 0 1 .955.328l7.6 6.32c.521.433 1.081.224 1.081-.289V4.522A.494.494 0 0 0 17.229 4ZM27 6.3l-1.791 1.793a14.708 14.708 0 0 1 0 15.844l1.785 1.776A17.19 17.19 0 0 0 27 6.3Zm-4.333 4.323L20.905 12.4a6.035 6.035 0 0 1 0 7.237l1.756 1.756a8.554 8.554 0 0 0 .01-10.769Z" />
+                    </svg><strong>Manipulate your file</strong></p>
+                <div class="holder">
+                    <p><i>your_file.mp3</i></p>
+                    <div class="audio green-audio-player">
+                        <div class="loading">
+                            <div class="spinner"></div>
+                        </div>
+                        <div class="play-pause-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="24" viewBox="0 0 18 24">
+                                <path fill="#566574" fill-rule="evenodd" d="M18 12L0 24V0" class="play-pause-icon"
+                                    id="playPause" />
+                            </svg>
+                        </div>
+
+                        <div class="controls">
+                            <span class="current-time">0:00</span>
+                            <div class="slider" data-direction="horizontal">
+                                <div class="progress">
+                                    <div class="pin" id="progress-pin" data-method="rewind"></div>
+                                </div>
+                            </div>
+                            <span class="total-time">0:00</span>
+                        </div>
+
+                        <div class="volume">
+                            <div class="volume-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="#566574" fill-rule="evenodd"
+                                        d="M14.667 0v2.747c3.853 1.146 6.666 4.72 6.666 8.946 0 4.227-2.813 7.787-6.666 8.934v2.76C20 22.173 24 17.4 24 11.693 24 5.987 20 1.213 14.667 0zM18 11.693c0-2.36-1.333-4.386-3.333-5.373v10.707c2-.947 3.333-2.987 3.333-5.334zm-18-4v8h5.333L12 22.36V1.027L5.333 7.693H0z"
+                                        id="speaker" />
+                                </svg>
+                            </div>
+                            <div class="volume-controls hidden">
+                                <div class="slider" data-direction="vertical">
+                                    <div class="progress">
+                                        <div class="pin" id="volume-pin" data-method="changeVolume"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <audio crossorigin>
+                            <source src="/tests/jfk.flac" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+            <div id="main-right"></div>
     </section>
 
 </body>
