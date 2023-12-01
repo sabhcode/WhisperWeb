@@ -1,5 +1,13 @@
 // FILE INPUT
 document.addEventListener('DOMContentLoaded', function () {
+
+    let runButton = document.getElementById("runButton");
+    let runSVG = document.getElementById("runSVG");
+
+    runButton.disabled = true;
+    runSVG.style.opacity = "0.2";
+    runSVG.style.cursor = "not-allowed";
+
     // Sélectionnez l'élément d'entrée de fichier
     let fileInput = document.getElementById('fileInput');
 
@@ -16,6 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
             let selectedFile = input.files[0];
 
             input.disabled = true;
+            runButton.disabled = false;
+            runSVG.style.opacity = "1";
+            runSVG.style.cursor = "pointer";
 
             // Fonction appelée avant le rechargement de la page
             window.onbeforeunload = function () {

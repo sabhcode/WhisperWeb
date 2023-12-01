@@ -68,7 +68,7 @@
 
  }
 
- #slogan-and-run a {
+ #slogan-and-run button {
 
 
      border: 1.5px solid #f6dce0;
@@ -85,7 +85,7 @@
 
  }
 
- #slogan-and-run a svg:hover {
+ #slogan-and-run button svg:hover {
 
      scale: 1.05;
      transition-duration: 0.2s;
