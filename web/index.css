@@ -198,3 +198,20 @@
      opacity: 0.5;
 
  }
+
+ #your-file-and-svg {
+
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     margin: auto;
+ }
+
+
+ #your-file-and-svg p {
+
+     margin: auto;
+     color: #FF005E;
+     opacity: 0.5;
+
+ }
