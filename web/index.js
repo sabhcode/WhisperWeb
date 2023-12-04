@@ -1,19 +1,22 @@
-// FILE INPUT
 document.addEventListener('DOMContentLoaded', function () {
 
+    // ELEMENTS INITS
     let runButton = document.getElementById("runButton");
     let runSVG = document.getElementById("runSVG");
+    let fileInput = document.getElementById('fileInput');
+    let audio = document.getElementById("audioPlayer");
+    let source = document.getElementById("audioSource");
+    let fileName = document.getElementById("fileName");
 
+    // PRE-USE CONFIG
     runButton.disabled = true;
     runSVG.style.opacity = "0.2";
     runSVG.style.cursor = "not-allowed";
 
-    // Sélectionnez l'élément d'entrée de fichier
-    let fileInput = document.getElementById('fileInput');
-
-    // Ajoutez un écouteur d'événements 'change' à l'élément d'entrée de fichier
+    // LISTENERS
     fileInput.addEventListener('change', handleFileSelect);
 
+    // FUNCTIONS
     function handleFileSelect(event) {
         // Obtenez l'élément d'entrée de fichier
         let input = event.target;
@@ -56,12 +59,13 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     }
+
+    function test() {
+
+        alert('fzzeef');
+
+    }
 });
 
 
-// AUDIO PLAYER 
-
-let audio = document.getElementById("audioPlayer");
-let source = document.getElementById("audioSource");
-let fileName = document.getElementById("fileName");
 
