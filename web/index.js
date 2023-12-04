@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // LISTENERS
     fileInput.addEventListener('change', handleFileSelect);
+    runButton.addEventListener('click', run);
 
     // FUNCTIONS
     function handleFileSelect(event) {
@@ -60,9 +61,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    function test() {
+    function run() {
 
-        alert('fzzeef');
+        alert('Lancé !');
 
     }
 });
