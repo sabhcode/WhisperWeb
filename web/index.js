@@ -1,12 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // ELEMENTS INITS
-    let runButton = document.getElementById("runButton");
-    let runSVG = document.getElementById("runSVG");
-    let fileInput = document.getElementById('fileInput');
-    let audio = document.getElementById("audioPlayer");
-    let source = document.getElementById("audioSource");
-    let fileName = document.getElementById("fileName");
+    const runButton = document.getElementById("runButton");
+    const runSVG = document.getElementById("runSVG");
+    const fileInput = document.getElementById('fileInput');
+    const audio = document.getElementById("audioPlayer");
+    const source = document.getElementById("audioSource");
+    const fileName = document.getElementById("fileName");
 
     // PRE-USE CONFIG
     runButton.disabled = true;
