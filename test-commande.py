@@ -15,7 +15,7 @@ def execute_command_in_cmd_terminal(command, working_directory):
 # Répertoire de travail
 working_directory = r'C:\Users\soufiane.allaoui\Documents\WhisperWeb'
 
-file = input("Insert file :")
+file = "jfk.flac"
 
 # Demander à l'utilisateur d'entrer la commande à exécuter
 user_command = "whisper tests/"+ file + " --model small"
