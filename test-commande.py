@@ -1,5 +1,4 @@
 import subprocess
-import os
 
 def execute_command_in_cmd_terminal(command, working_directory):
     try:
